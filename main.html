@@ -1,0 +1,19 @@
+<head>
+
+</head>
+
+<body>
+    {{> leaderboard}}
+</body>
+
+<template name="leaderboard">
+    {{#each alltags}}
+      {{#each food}}
+      <ul>
+          <li><span class="label label-default"> {{this}}</span></li>
+      </ul>
+      {{/each}}
+  {{/each}}
+  <ul><li>{{cook}}</li></ul>
+</template>
+
